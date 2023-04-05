@@ -66,3 +66,23 @@ class Types {
         theDate.getTime();
     }
 }
+
+// STRINGS
+
+class Strings {                                                  // Strings are reference types in java. They are also immutable(cant change them). So, string methods will always return new strings
+    public static void strings() {
+        String message = "hello world" + "!" ;                   // String class defined in java.lang package(automatically imported)
+                                                                 // because this is a reference type, we would have to instatiate variable with 'new' operator. However, strings are reference types in java so "hello world" would function the same as new String(hello world)
+        System.out.println(message);
+    }
+}
+    // Common string methods
+        // message.endsWith("!")  = true
+        // message.startsWith("!") = false
+        // message.length() = 12
+        // message.indexOf("h") = 0
+        // message.indexOf("sky") = -1 
+        // message.replace(target: "!", replacement: "?")   NOTE: method doesnt modify original string, it creates a new one
+        // message.toLowerCase()
+        // message.toUpperCase()
+        // message.trim()        *Removes white spaces at beginning or end of string, useful for form inputs
