@@ -1,3 +1,5 @@
+import java.util.Date;   // this is imported when we run package below(in reference types, we selected Date.util package)
+
 // HOW TO RUN CODE
     // first, check that file has a method called 'main' within the file class (in this case its 'Basics'). The Java Virtual Machine will execute the main method in the Basics class, and your program will run, printing the output to the terminal.
     // running code will only run whats in the main method, so if you want the later methods to run, call them inside of main method
@@ -36,7 +38,7 @@ class IntegersClass {
 }
 
 // TYPES
-    // Primitive - for storing simple values
+    // Primitive - for storing simple values (e.g. - numbers, characters, booleans)
                     //  Type    |      Bytes(memory)     |    Range
                     //------------------------------------------------
                     //  byte    |           1            |  [-128, 127]
@@ -47,14 +49,20 @@ class IntegersClass {
                     //  double  |           8            |  for decimals
                     //  char    |           2            |  A, B, C, ...
                     //  boolean |           1            |  true / false
-    // Reference - for storing complex objects
+    // Reference - for storing complex objects(e.g. - date, mail message)
 
 class Types {
-    public static void types() {
+    public static void primitiveTypes() {
         byte age = 30;
         long viewCount = 3_123_543L; // when using long, must add suffix "L (or l)" to end. Also, can use _ to seperate numbers instead of ',' to make it easier to read
         float price = 10.99F;        // similar to long, java recognizes decimals as 'doubles', however we want to use float in this case because it takes up less memory but still provides the necessary range, so we have to add the 'F' suffix to the end
         char letter = 'A';
         boolean isElible = true;
+    }
+
+    public static void referenceTypes() {
+        Date theDate = new Date();         // always allocate memory for reference type, use 'new' operator to allocate memory for this variable. We dont have to determine how much memorky to allocate, java runtime system will do it automatically
+                                           // 'theDate' is an instance of the Date class (its an object)
+        theDate.getTime();
     }
 }
