@@ -14,3 +14,9 @@ public class Basics {   // NOTE: the public type must be defined in its own file
     }
 }
 
+
+// HOW JAVA CODE GETS EXECUTED
+
+    // Two main steps = Compilation and Execution 
+                    //- Source Code(.java) -> Java compiler -> Byte code(.class) -> Java Virtual Machine -> Native Code(Windows, Mac, etc)
+
