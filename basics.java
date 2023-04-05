@@ -1,3 +1,4 @@
+import java.util.Arrays; // import package for Arrays; using toString to take string identifier for address in memory of array object and parsing it to the actual array value
 import java.util.Date;   // this is imported when we run package below(in reference types, we selected Date.util package)
 
 // HOW TO RUN CODE
@@ -90,4 +91,22 @@ class Strings {                                                  // Strings are 
         // message.toLowerCase()
         // message.toUpperCase()
         // message.trim()        *Removes white spaces at beginning or end of string, useful for form inputs
+
+// ARRAYS
+
+
+class Arraysss {
+    public static void learnArrays() {
+        int[] numbers = new int[5];     // new operator because arrays aren't reference types. The '5' in brackets indicates size of array
+        numbers[0] = 1;
+        numbers[1] = 2;                 // can specify values for specific index of array
+
+        //Better way to initialize array
+        int[] newNumbers = {1, 9, 3, 2, 5};     // NOTE: in Java arrays have a fixed size, so once we create them we cannot add or remove items (need to use collection class to alter array)
+        Arrays.sort(newNumbers);  // would return {1, 2, 3, 5, 9}
+
+        System.out.println(Arrays.toString(numbers));  // without 'Arrays.toString', Java returns a string based on address of this object in memory, so it would be a jumbled looking string, not the actual array data
+                                                       // Array would look like [1,2,0,0,0] since we set the [0] and [1] index to those values, but didnt set anything for the remaining three indices
+    }
+}
 
