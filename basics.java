@@ -74,6 +74,10 @@ class Strings {                                                  // Strings are 
         String message = "hello world" + "!" ;                   // String class defined in java.lang package(automatically imported)
                                                                  // because this is a reference type, we would have to instatiate variable with 'new' operator. However, strings are reference types in java so "hello world" would function the same as new String(hello world)
         System.out.println(message);
+    
+        // Escape Sequences
+        String templateLiteral = "hi \"Connor\"";               // this would return `hi "Connor"`
+                                                                // \n would create a new line wherver placed in string. \t would add tab spacing wherver placed
     }
 }
     // Common string methods
@@ -86,3 +90,4 @@ class Strings {                                                  // Strings are 
         // message.toLowerCase()
         // message.toUpperCase()
         // message.trim()        *Removes white spaces at beginning or end of string, useful for form inputs
+
