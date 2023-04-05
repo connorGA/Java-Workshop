@@ -1,3 +1,3 @@
-Java Crash Course
+# Java Crash Course
 
 ![](/images/javacoffee.png)
