@@ -110,3 +110,18 @@ class Arraysss {
     }
 }
 
+// Multi-dimensional Arrays
+   
+class multiDimArray {
+    public static void multiDimArrays() {
+        int[][] numbers = new int[2][3];    // multidimensional array with 2 rows and three columns
+        numbers[0][0] = 1;                  // array would print as [[1,0,0], [0,0,0]]
+
+        //Curly brace snytax
+        int[][] nums = { {1,2,3}, {4,5,6} };
+
+        System.out.println(Arrays.deepToString(numbers));   //'deepToString' functions same as 'toString' did for one dimenstinoal arrays above, however is intended for multidimensinoal arrays
+
+    }
+}
+
