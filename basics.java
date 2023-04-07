@@ -125,3 +125,11 @@ class multiDimArray {
     }
 }
 
+
+// CONSTANTS
+
+class constants{
+    public static void constant() {
+       final float PI = 3.14F;          // by adding 'final', Java compilier will treat this variable as a constant, and throw an error if pi is set equal to another value later on
+    }                                   // best practice is to name constant variabls in all caps
+}
