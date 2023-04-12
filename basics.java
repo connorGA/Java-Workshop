@@ -133,3 +133,17 @@ class constants{
        final float PI = 3.14F;          // by adding 'final', Java compilier will treat this variable as a constant, and throw an error if pi is set equal to another value later on
     }                                   // best practice is to name constant variabls in all caps
 }
+
+// ARITHMETIC EXPRESSIONS
+
+class arithmeticExpressions {
+    public static void artith() {       
+        int result = 10 + 3;           // subtraction and multiplication also work how expected, division a little different
+        int divisResult = 10 / 3;      // would return 3, because in Java division of two whole numbers is a whole number
+    // double divisResult = (double)10 / (double)3;    ****correct way
+        int x = 1;
+        x++; // increment by 1
+        System.out.println(result);
+
+    }
+}
