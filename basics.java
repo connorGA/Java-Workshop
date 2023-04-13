@@ -142,8 +142,19 @@ class arithmeticExpressions {
         int divisResult = 10 / 3;      // would return 3, because in Java division of two whole numbers is a whole number
     // double divisResult = (double)10 / (double)3;    ****correct way
         int x = 1;
-        x++; // increment by 1
+        x++; // increment by 1, so x would return 2
         System.out.println(result);
 
+    }
+}
+
+// THE MATH CLASS
+
+class mathClass{
+    public static void math() {
+       int result =  Math.round(1.1F); // rounds to nearest whole number
+       int result2 = (int)Math.ceil(1.1F); // returns 2, nearest cieling. the .floor method would return 1
+       int result3 = Math.max(1,2); // return the greater of the numbers, 2. Can also use .min
+       double result4 = Math.random(); //returns random decimal between 0 and 1. Doing Math.random() * 100 would do numbers from 1 - 100 
     }
 }
