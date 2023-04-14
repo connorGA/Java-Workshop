@@ -1,5 +1,7 @@
+import java.text.NumberFormat;
 import java.util.Arrays; // import package for Arrays; using toString to take string identifier for address in memory of array object and parsing it to the actual array value
 import java.util.Date;   // this is imported when we run package below(in reference types, we selected Date.util package)
+import java.util.Scanner;
 
 // HOW TO RUN CODE
     // first, check that file has a method called 'main' within the file class (in this case its 'Basics'). The Java Virtual Machine will execute the main method in the Basics class, and your program will run, printing the output to the terminal.
@@ -8,9 +10,37 @@ import java.util.Date;   // this is imported when we run package below(in refere
         // this command will generate a '.class' file (e.g. 'Basics.class') containing the compiled bytecode of your java file
     // Run the compiled bytecode using the 'java' command, in this case 'java Basics'
 
+
+
 class Main {         // defines class 'Main'
     void method() {    // method = function that belongs to a class
         //main
+    }
+
+    //MORTGAGE CALCULATOR
+    public static void main(String[] args) {
+        final byte MONTHS_IN_YEAR = 12;
+        final byte PERCENT = 100;
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Principal: ");
+        int principal = scanner.nextInt();
+
+        System.out.print("Annual Interest Rate: ");
+        float annualInterest = scanner.nextFloat();
+        float monthlyInterest = annualInterest / PERCENT / MONTHS_IN_YEAR;
+
+        System.out.print("Period (Years): ");
+        byte years = scanner.nextByte();
+        int numberOfPayments = years * MONTHS_IN_YEAR;
+
+        double mortgage = principal
+                    * (monthlyInterest * Math.pow(1 + monthlyInterest, numberOfPayments))
+                    / (Math.pow(1 + monthlyInterest, numberOfPayments) - 1);
+
+        NumberFormat mortgageFormatted = NumberFormat.getCurrencyInstance();
+        System.out.println("Mortgage: " + mortgageFormatted);
     }
 }
 
