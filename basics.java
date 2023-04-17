@@ -204,6 +204,14 @@ class comparisonOps {
 
 //Logical Operators
 
+class logicalOps {
+    public static void logic() {
+       int temperature = 22;
+       boolean isWarm = temperature > 20 && temperature < 30;   // && this is the 'and' operator. The 'or' operator is ||
+       System.out.println(isWarm);  // would return true, if temp was 12 for example, it would be false. Java evaulates expression from left to right
+    }
+}
+
 //Conditional Statements
 
 //Loops
