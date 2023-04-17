@@ -232,10 +232,35 @@ class ifStatements{
 class ternary {
     public static void tern() {
         int income = 120_000;
-        String className = "Economy";
-        if (income > 100_000)
-            className = "First";
+        String className = income > 100_000 ? "First" : "Economy";  // checks condition at beginning, if condition is true, first value is returned, else it would be the latter variable 'Economy'
+                                            //ternary operator saves trouble of doing a conditional. ( conditional ? "iftrue" : "iffalse";)
     }
 }
 
 
+// Switch Statements
+
+class switchStatements {
+    public static void switchy() {
+        String role = "admin";
+
+        switch (role) {
+            case "admin":
+                System.out.println("Youre an admin");
+                break;
+            case "moderator":
+                System.out.println("Youre a moderator");
+                break;
+            default:
+                System.out.println("Youre a guest");
+        }
+
+        //Switch statement above works like this conditional:
+        // if (role == "admin")
+        //     System.out.println("Youre an admin");
+        // else if (role == "moderator")
+        //     System.out.println("You are a moderator");
+        // else 
+        //     System.out.println("Youre a guest");
+    }
+}
