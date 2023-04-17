@@ -188,3 +188,24 @@ class mathClass{
        double result4 = Math.random(); //returns random decimal between 0 and 1. Doing Math.random() * 100 would do numbers from 1 - 100 
     }
 }
+
+// CONTROL FLOW ----------
+
+//Comparison Operators
+
+class comparisonOps {
+    public static void compare() {
+        int x = 1;
+        int y = 1;
+        System.out.println(x == y);  // should return true
+                                     // != , <, >, <=, >= all work as expected
+    }
+}
+
+//Logical Operators
+
+//Conditional Statements
+
+//Loops
+
+
