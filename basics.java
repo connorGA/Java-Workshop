@@ -227,6 +227,15 @@ class ifStatements{
     }
 }
 
-//Loops
+//The Ternary Operator
+
+class ternary {
+    public static void tern() {
+        int income = 120_000;
+        String className = "Economy";
+        if (income > 100_000)
+            className = "First";
+    }
+}
 
 
