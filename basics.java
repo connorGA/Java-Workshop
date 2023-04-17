@@ -214,6 +214,19 @@ class logicalOps {
 
 //Conditional Statements
 
+class ifStatements{
+    public static void ifStates() {
+        int temp = 32;
+        if (temp > 30){
+            System.out.println("It's a hot day");           //NOTE only needed to use braces when code block more than one line to make cleaner, not required to put curlys like you would in javascript
+        } 
+        else if (temp > 20 && temp <= 30)
+            System.out.println("Beautiful day");
+        else 
+            System.out.println("Cold day");
+    }
+}
+
 //Loops
 
 
