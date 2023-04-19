@@ -294,3 +294,19 @@ class loops{
         }
     }
 }
+
+// While loops
+
+class whileloop{                                    // while loops useful when we dont know how many times we are going to repeat something
+    public static void looper() {
+        Scanner scanner = new Scanner(System.in);
+        String input = "";
+        while (!input.equals("quit")) {
+            System.out.println("Input: ");
+            input = scanner.next().toLowerCase();
+            System.out.println(input);
+        }
+
+        }
+    }
+  
