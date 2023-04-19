@@ -283,3 +283,14 @@ class fizzBuzz {
             System.out.println(number);
     }
 }
+
+// For loops
+
+class loops{
+    public static void loopin() {
+        for (int i = 0; i < 5; i++){                // for loop similar to javascript, just make sure you define the type of the variable(in this case int)
+            System.out.println("Hello world");
+            System.out.println(i);
+        }
+    }
+}
