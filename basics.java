@@ -306,7 +306,12 @@ class whileloop{                                    // while loops useful when w
             input = scanner.next().toLowerCase();
             System.out.println(input);
         }
-
+        // do while loop
+        do {                                            // always get executed at least once, even if condition is false
+            System.out.println("Input: ");
+            input = scanner.next().toLowerCase();
+            System.out.println(input);
+        } while (!input.equals("quit"));
         }
     }
   
