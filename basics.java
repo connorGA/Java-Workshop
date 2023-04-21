@@ -315,3 +315,13 @@ class whileloop{                                    // while loops useful when w
         }
     }
   
+// For Each Loop
+
+class foreaches{
+    public static void foreachloopers() {
+        String[] fruits = {"Apple", "Mango", "Orange"};
+
+        for (String fruit: fruits)
+            System.out.println(fruit);              // prints "Apple" "Mango" "Orange"
+    }
+}
